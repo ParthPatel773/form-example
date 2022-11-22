@@ -1,0 +1,294 @@
+<!doctype html>
+<html>
+<head>
+<title> Form Example </title>
+</head>
+<body> <h1> Example-1 </h1>
+	<form>
+	<fieldset>
+	<legend> <h2> Personal Information </h2> </legend>
+	<table align="center" border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<th> Gender: </th>
+				<td> <input type="radio" value="m" name="Gender"> Male 
+						<input type="radio"  value="f" name="Gender"/> Female 
+			    </td>
+			</tr>
+			<tr>
+				<th> Birthday: </th>
+				<td> <select>
+									<option> Month </option> 	
+									<option> January </option>
+									<option> February </option>
+									<option> March </option>
+									<option> April </option> 	
+									<option> May </option>
+									<option> June</option>
+									<option> July </option>
+									<option> August </option> 	
+									<option> September </option>
+									<option> October </option>
+									<option> November </option>
+									<option> December </option> 	
+					 </select>
+                      <input type="number"	value="Date" Min="1" Max="31" placeholder="Date">
+					  <input type="number"	value="Year" Min="1975" Max="2022" placeholder="1975">	
+				</td>
+			</tr>
+			<tr>
+				<th> State: </th>
+					<td> <select>
+									<option> Ohio </option> 	
+									<option> rhio </option>
+									<option> jhio </option>
+									<option> phio </option>
+									<option> khio </option> 	
+					     </select>
+					</td>
+			</tr>
+			<tr>
+				<th> Country: </th>
+					<td> <select>
+									<option> United States </option> 	
+									<option> United Kingdom </option>
+									<option> India </option>
+									<option> New zealand </option>
+									<option> Japan </option>
+									<option> Sri Lanka </option> 	
+					     </select>
+					</td>
+			</tr>
+	</table>
+	</fieldset> 
+	</form> <br/> 
+
+	
+	<form>
+	<fieldset>
+	<legend> <h2> Site Registration  </h2> </legend>
+	<table align="center"  border="0" cellpadding="5" cellspacing="5">
+			<tr>
+				<th>Username:</th>
+				<td>  <input type="Text" Name="Username"/> </td>
+			</tr>
+			<tr>
+				<th>Password:</th>
+				<td>  <input type="Password" Name="Password"/> </td>
+			</tr>
+			<tr>
+				<th>Retype Password:</th>
+				<td>  <input type="Password" Name="Password"/> </td>
+			</tr>
+			<tr>
+				<th>Email address:</th>
+				<td>  <input type="Email" Name="E-Mail" required=""/> </td>
+			</tr>
+			<tr>
+				<th>Retype Email address:</th>
+				<td>  <input type="Email" Name="E-Mail" required=""/> </td>
+			</tr>
+	</table>
+	</fieldset>
+    </form>	<br/>
+	
+	<table align="center">
+			<tr>
+				<td align="center"> <input type="submit" value="Submit"/> </td>
+			</tr>
+	</table>
+	<br/><br/>
+		
+		
+		
+	<h1> Example-2 </h1>
+	<form>
+		<table align="center">
+			<tr>
+				<td> <label for="name"> Name: </label> </td>
+				<td> <input type="text" id="name"/> </td>
+			</tr>
+			<tr>
+				<td> <label for="email"> Email: </label> </td>
+				<td> <input type="Email" id="name"/> </td>
+			</tr>
+			<tr>
+				<td> <label for="telnum"> Tel NO.: </label> </td>
+				<td> <input type="telnum" id="telnum"/> </td>
+			</tr>
+			<tr>
+				<td> <label for="Roll No."> Roll No.: </label> </td>
+				<td> <input type="number" id="rollno"/> </td>
+			</tr>
+		</table>	
+	</form><br/>
+	
+	<h1> Example-3 </h1>
+	<form>
+		<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+				<th colspan="3"> Pizza Shop 2.0 </th>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td> <input type="text" id="name"/> </td>
+			</tr>
+			<tr>
+				<th rowspan="3"> Pizza Topping </th>
+			    <td> <input type="checkbox" name="Topping" value="supreme"/> Supreme </td> 
+				<tr>
+					<td> <input type="checkbox"  name="Topping" value="Vegetarian"/> Vegetarian </td> 
+					<tr>  
+						<td> <input type="checkbox"  name="Topping" value="Hawaiian"/> Hawaiian </td> 
+					</tr>
+				</tr>
+			</tr>
+			<!--<tr> (Use For Autosuggestion)
+				<form> <th> Pizza Sauce </th>
+					<td>  <input type="text" name="Sauce" list="Sauce"/>
+					<datalist id="Sauce">
+					<option value="Tometo"> Tometo </option>
+					<option value="A"> A </option>
+					<option value="B"> B </option>
+					<option value="C"> C </option>
+					<option value="D"> D </option>
+					</datalist>  </td>
+				</form>
+			</tr>-->
+			<tr>
+				<th> Pizza sauce </th>
+				<td> <select>
+									<option> Tomato </option>
+									<option> A </option>
+									<option> B </option>
+					 </select> </td>
+			</tr>
+			<tr>
+				<th> Optional Extras </th>
+				<td>  <input type="checkbox" name="Extras" value="Cheese"> Extra Cheese
+						<input type="checkbox"  name="Extras" value="Gluten"> Gluten Free Base
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2"> Delivery Instructions: <br/>
+					<textarea rows="5" cols="60"> </textarea>
+				</th>	
+			</tr>
+			<!--Previous Type 
+			<tr>
+				<th> Delivery Instructions: </th>
+				<tr>
+					<td colspan="2"> <textarea rows="5" cols="60"> </textarea> </td>
+				</tr>
+				</th>	
+			</tr>
+			-->
+			<!--Another Type 
+			<tr>
+				<th> Delivery Instructions: </th>
+					<td colspan="2"> <textarea rows="5" cols="60"> </textarea> </td>
+				</th>	
+			</tr>
+			-->
+			<tr>
+				<td> <input type="submit" value="Send my order"> </td>
+			</tr>	
+		</table> 
+	</form> <br/>
+	
+	<h1> Example-4 </h1>
+		<p> <center> KM Custom HTML Form Example Using Applescript </center> </p>
+	<form>
+		<table border="1" cellspacing="2" cellpadding="2" align="center">
+			<tr>
+				<th> Name: </th>
+				<td> <input type="Text" value="John Applescript" readonly=""> 
+			</tr>
+			<tr>
+				<th> E-mail: </th>
+				<td> <input type="Email" placeholder="" value="johnny@Applescript.com" autofocus="" required=""> </td>
+			</tr>
+			<tr>
+				<th>Password: </th>
+				<td>  <input type="password" placeholder="" maxlength="10" placeholder=""> </td>
+			</tr> 
+			<tr>
+				<th> Approval Required:<div> <h6> Click on the button or text to <div> check/uncheck.</h6> </div> </div> </th>
+				<td> <input type="checkbox" name="Require" value="approve"> Do you approve? </td>
+			</tr> 
+			<tr>
+				<th rowspan="3"> Pick Your Favorite:<br/><h6>Click on the button or text to<br/>select.</h6></th>
+				<td> <input type="radio" value="A" name="choice "> Choice A
+						<tr> <td> <input type="radio"  value="B" name="choice" checked> Choice B </td> </tr>
+						<tr> <td> <input type="radio"  value="C" name="choice" > Choice C </td> </tr>
+			</tr> 
+			<!--<tr>
+					<th rowspan="3"> Pick Your Favorite:<br/><h6>Click on the button or text to<br/>select.</h6>
+						<input type="radio" value="A" name="choice "> Choice A
+						<input type="radio"  value="B" name="choice" checked> Choice B
+						<input type="radio"  value="C" name="choice" > Choice C 
+					</th>
+				</tr>-->
+				
+			<tr>
+				<th> Popup Menu: </th>
+				<td> <select>
+									<option> Texas--Tx </option>
+									<option> A </option>
+									<option> B </option>
+									<option> C </option>
+					 </select> </td>
+			</tr>
+			<tr> 
+				<form> <th align="left"> List 
+				         <h5>Setup Options:</h5>
+						 <ul align="left">
+							 <li> <h6> Number of rows to display </h6> </li> 
+							<li> <h6> Allow Multi-select </h6> </li> 
+						 </ul> </th>
+					<td>  <input type="text" name="setup" list="Setup"/>
+					<datalist id="Setup">
+					<option value="California--CA"> CA </option>
+					<option value="Colorado--CO"> CO </option>
+					<option value="Connecticut--CN"> CN </option>
+					<option value="Dalifornia--DA"> DA </option>
+					<option value="Dolorado--DO"> DO </option>
+					</datalist> </td>
+				</form>
+			</tr>
+			<tr>
+				<th> Field Ignored by KM: </th>
+				<td> <input type="number" placeholder="10,384" readonly> </td>
+			</tr>
+			<tr>
+				<th> Text Area </th>
+				<td> <textarea rows="5" cols="40"/> </textarea> </td>
+			</tr>
+		</table>
+	</form> <br/><br/>	
+		<table align="Center">
+		<tr>
+				<td> <input type="submit" value="Save">
+					 <input type="reset" value="Cancel"> 
+					 <input type="reset" value="Resize"> </td>
+		</tr>
+		</table> <br/>
+		
+	<h1> Example-5 </h1>
+		<form>
+		<fieldset> <legend> <strong> Gender </strong> </legend>
+		<table border="1" cellspacing="0" cellpadding="5">
+		<tr>
+			<td>
+				<label> <input type="radio" name="gender" checked value="unspecified"> Unspecified </label> </td>
+				<td> <label> <input type="radio" name="gender"  value="Female"> Female </label> </td>
+				<td> <label> <input type="radio" name="gender"  value="Male"> Male </label> </td>
+		</tr>
+		</table>
+		</fieldset>
+		</form>	
+	
+	
+	
+	
+</body>
+</html>
